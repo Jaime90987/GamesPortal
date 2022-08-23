@@ -1,10 +1,14 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GamesPortal - Login</title>
+  <title>GamesPortal - Login php 1</title>
   <!-- CSS Bootstrap -->
   <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
   <!-- Custom CSS -->
@@ -19,7 +23,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="/index2.html">
           <img src="/assets/img/logo.png" alt="Logo" width="170" height="44">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +32,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item pr-3">
-              <a class="nav-link light mypadding" aria-current="page" href="/index.html">Inicio</a>
+              <a class="nav-link light mypadding" aria-current="page" href="/index2.html">Inicio</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle mypadding" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,7 +64,7 @@
       <section class="">
         <div class="row">
           <div class="otropadd mb-5">
-            <form name="datos-formulario-login" action="" method="POST">
+            <form name="datos-formulario-login" action="/login2.php" method="POST">
               <fieldset class="myfieldset">
                 <div class="row form-row">
                   <span class="mb-2 mt-2"><i class="fa-solid fa-user-large"></i> Usuario</span>
@@ -86,7 +90,7 @@
                 </select>
 
                 <div class="d-grid gap-2 centrar"> 
-                  <button type="submit" class="btn btn-primary mb-3 boton2">Login</button>
+                  <input type="submit" name="btnsend" value="Login" class="btn btn-primary mb-3 boton2">
                   <p class="text-center mb-1">¿Aún no tienes una cuenta?</p>
                   <a href="/pages/signup.html" class="btn btn-secondary mb-2 boton2">Registrarse</a>
                 </div>

@@ -1,14 +1,23 @@
+<?php
+  session_start();
+  if(isset($_POST['btnsend'])){
+    $nombre = $_POST['USER'];
+    $password = $_POST['PASSWORD'];
+    $noticias = $_POST['NEWS'];
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GamesPortal - Play Station</title>
+  <title>GamesPortal - Login php 2</title>
   <!-- CSS Bootstrap -->
   <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/style_ps.css" type="text/css">
+  <link rel="stylesheet" href="/css/style_login.css" type="text/css">
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/2b3617159f.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
@@ -26,89 +35,81 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+          <ul class="navbar-nav">
             <li class="nav-item pr-3">
               <a class="nav-link light mypadding" aria-current="page" href="/index2.html">Inicio</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle light active mypadding" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle mypadding" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Noticias</a>
               <ul class="dropdown-menu dropdown-menu-dark mycolor">
                 <li><a class="dropdown-item" href="/pages/pc.html">PC</a></li>
                 <li><a class="dropdown-item" href="/pages/xbox.html">Xbox</a></li>
-                <li><a class="dropdown-item active" href="/pages/ps.html">Play Station</a></li>
+                <li><a class="dropdown-item" href="/pages/ps.html">Play Station</a></li>
                 <li><a class="dropdown-item" href="/pages/nintendo.html">Nintendo</a></li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item light">
               <a class="nav-link mypadding" href="/pages/contacto.html">Contáctanos</a>
             </li>
           </ul>
-          <a href="/pages/login1.php" class="navbar-text btn btn-success m1">
-            Login
-          </a>
-          <a href="/pages/signup.html" class="navbar-text btn btn-light m2">
-            Sign Up
-          </a>
         </div>
       </div>
     </nav>
   </header>
   <!-- ------------------------------main--------------------------------------- -->
   <main>
+
     <!-- ----------------------------------------------------------Noticias--------------------------------------------------- -->
     <div class="container pt-3 pb-2 container-principal">
-      <div class="row mymargen">
-        <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
-          <h2 class="titulo"><i class="fa-brands fa-playstation icon"></i> Noticias <span class="marca">Play Station</span></h2>
-          <article class="carta">
-            <a href="/pages/news/play-station/noticia2.html" class="carta__thumbnail">
-              <img src="/assets/img/noticia2/plst2022816108511_3.jpg" alt="Imagen de Paisaje" class="carta__image img-fluid">
-            </a>
-            <div class="carta__info blog-meta big-meta col-md-8">
-              <h3 class="carta__title">
-                <b><a href="/pages/news/play-station/noticia2.html" class="carta__link-title">Sony y el estudio Ballistic Moon colaboran en un juego con Unreal Engine 5.</a></b>
-              </h3>
-              <a href="/pages/ps.html" class="btn btn-sm mb-2 boton-ps">PS</a>
-              <p class="carta__texto">La compañía británica Ballistic Moon, fundada por desarrolladores de Until Dawn y Heavy Rain, está trabajando en un título que publicará Sony Interactive Entertainment.</p>
-              <p class="carta__text_small">
-                <small><i class="fa-solid fa-comments"></i> 9 - </small>
-                <small>Jaime Jaramillo Pérez - </small>
-                <small>20 Agosto, 2022</small>
-              </p>
-            </div>
-            <a href="/pages/news/play-station/noticia2.html" class="boton boton--more">
-              <span class="boton__text">Leer más...</span>
-              <i class="boton__icon fas fa-arrow-right"></i>
-            </a>
-          </article>
-          <hr>
-          <article class="carta">
-            <a href="/pages/news/play-station/noticia1.html" class="carta__thumbnail">
-              <img src="/assets/img/noticia1/gow2022816102277_1.jpg.webp" alt="Imagen de Paisaje" class="carta__image img-fluid">
-            </a>
-            <div class="carta__info blog-meta big-meta col-md-8">
-              <h3 class="carta__title">
-                <b><a href="/pages/news/play-station/noticia1.html" class="carta__link-title">God of War Ragnarok: Se filtra un arte que nos deja ver el sorprendente aspecto de Odín.</a></b>
-              </h3>
-              <a href="/pages/ps.html" class="btn btn-sm mb-2 boton-ps">PS</a>
-              <p class="carta__texto">El popular insider Dusk Golem ha revelado un primer vistazo del aspecto del dios nórdico en un arte conceptual filtrado de Ragnarok, el nuevo título de Santa Monica que llegará el 9 de noviembre.</p>
-              <p class="carta__text_small">
-                <small><i class="fa-solid fa-comments"></i> 9 - </small>
-                <small>Jaime Jaramillo Pérez - </small>
-                <small>15 Agosto, 2022</small>
-              </p>
-            </div>
-            <a href="/pages/news/play-station/noticia1.html" class="boton boton--more">
-              <span class="boton__text">Leer más...</span>
-              <i class="boton__icon fas fa-arrow-right"></i>
-            </a>
-          </article>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-          <!-- <h3>Reviews</h3>  -->
-        </div>
+      <div class="mymargen">
+        <h2 class="titulo mb-4"><i class="fa-solid fa-right-to-bracket"></i> Login</h2>
       </div>
+
+      <section class="">
+        <div class="row">
+          <div class="otropadd mb-5">
+            <form name="datos-formulario-login" action="" method="POST">
+              <fieldset class="myfieldset">
+                <div class="row form-row">
+                  <span class="mb-2 mt-2"><i class="fa-solid fa-user-large"></i> Usuario</span>
+                  <div class="mb-2">
+                    <input type="text" name="USER" id="USER" class="form-control gris" maxlength="20" placeholder="User" autofocus required>
+                  </div>
+                </div>
+    
+                <div class="row form-row mb-2 mt-2">
+                  <span class="mb-2"><i class="fa-solid fa-key"></i> Contraseña</span>
+                  <div class="mb-2">
+                    <input type="password" name="PASSWORD" id="PASSWORD" class="form-control gris"  maxlength="20" placeholder="Password" required>
+                  </div>
+                </div>
+
+                <span><i class="fa-solid fa-thumbs-up"></i> Interesad@ en</span>
+                <select name="NEWS" id="NEWS" class="form-select mb-4 mt-2 gris">
+                  <option value="0" selected class="tg">Noticias de...</option>
+                  <option value="1">PC</option>
+                  <option value="2">Xbox</option>
+                  <option value="3">Play Station</option>
+                  <option value="4">Nintendo</option>
+                </select>
+
+                <?php
+                  echo $nombre . "<br>";
+                  echo $password . "<br>";
+                  echo $noticias . "<br><br>";
+                ?>
+
+                <div class="d-grid gap-2 centrar"> 
+                  <input type="submit" value="Login" class="btn btn-primary mb-3 boton2">
+                  <p class="text-center mb-1">¿Aún no tienes una cuenta?</p>
+                  <a href="/pages/signup.html" class="btn btn-secondary mb-2 boton2">Registrarse</a>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
   <!-- ------------------------------footer--------------------------------------- -->
