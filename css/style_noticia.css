@@ -1,0 +1,299 @@
+body {
+    position: relative;
+    width: 100%;
+    background: #102229; 
+}
+
+html {
+    scrollbar-width: .8vw;
+    scrollbar-color: #444 #212529
+}
+
+::-webkit-scrollbar {
+    width: .8vw;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #3e4142;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #212c30;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 6px;
+    background-color: #5a5353c5;
+}
+
+.m1,
+.m2 {
+    width: 5.5em;
+    font-weight: 600;
+}
+
+.m1 {
+    margin-right: 15px;
+    color: #fff;
+}
+
+.m2 {
+    margin-right: 10px;
+    background-color: #ddd;
+    border-color: #ddd;
+    color: inherit;
+}
+
+.container-principal {
+    background-color: #ebebf5;
+    width: 100%;
+}
+
+.mymargen {
+    margin-top: 65px;
+}
+
+.mypadding {
+    margin-right: 10px;
+}
+
+.opacidad {
+    opacity: 0.6;
+}
+
+/*  */
+.container {
+    margin-top: 0px;
+}
+
+.cartas {
+    margin-bottom: 20px;
+}
+
+.cartas,
+.carousel,
+.carrusel-item {
+    height: 10rem;
+}
+
+.cartas {
+    position:relative;
+    z-index: 10;
+}
+
+.sin-padding {
+    padding-bottom: 3rem;
+}
+
+.fondo-texto {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.altura {
+    height: 28px;
+}
+
+.linea-margen {
+    margin-top: 18px;
+}
+
+.mi-overflow {
+    overflow: hidden;
+    background-color: rgba(35, 35, 35, 0.854);
+}
+
+.titulo {
+    background-color: #fff;
+    padding: 15px 19px 17px;
+	border-radius: 15px;
+	border-bottom: 1px solid #e5e5e5;
+    box-shadow: inset 0 0 3px;
+}
+
+.carta__text_small{
+    margin-bottom: 1em;
+    opacity: 0.5;
+}
+
+.boton {
+    min-width: 120px;
+    padding: 10px 30px;
+    background-color: #112229;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition-duration: .7s;
+}
+
+.boton__text {
+    font-weight: 600;
+}
+
+.boton--more {
+    position: absolute;
+    bottom: -15px;
+    right: 15px;
+}
+
+.boton__icon {
+    margin-left: 1.2em;
+}
+
+.boton--more:hover {
+    color: #fff;
+    box-shadow: 3px 6px 10px rgba(96, 96, 159, 0.3);
+    transform: translate(-5px) scale(1.08);
+    transition-duration: .4s;
+}
+
+.boton-pc {
+    --bs-btn-padding-y: .15rem;
+    --bs-btn-padding-x: .5rem; 
+    --bs-btn-font-size: .75rem; 
+    width: 4.1rem;
+    background-color: #171a21; 
+    color: #fff
+}
+
+.boton-xbox {
+    --bs-btn-padding-y: .15rem;
+    --bs-btn-padding-x: .5rem; 
+    --bs-btn-font-size: .75rem; 
+    width: 4.1rem;
+    background-color: #107C10; 
+    color: #fff
+}
+
+.boton-ps {
+    --bs-btn-padding-y: .15rem;
+    --bs-btn-padding-x: .5rem; 
+    --bs-btn-font-size: .75rem; 
+    width: 4.1rem;
+    background-color: #0070D1; 
+    color: #fff
+}
+
+.boton-nintendo {
+    --bs-btn-padding-y: .15rem;
+    --bs-btn-padding-x: .5rem; 
+    --bs-btn-font-size: .75rem; 
+    width: 4.1rem;
+    background-color: #dd2020; 
+    color: #fff
+}
+
+.myfieldset {
+    background-color: #fdfdfd;
+    padding: 15px 19px 17px;
+	border-radius: 15px;
+	border-bottom: 1px solid #e5e5e5;
+    box-shadow: inset 0 0 3px;
+}
+
+.gris {
+    background-color: #f0f0f0;
+}
+
+.tamanio {
+    margin-left: 11vw;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.contenedor-botones {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-formulario {
+    width: 150px;
+    margin-right: 4px;
+    margin-left: 6px;
+}
+
+.link,
+.link-color {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-color {
+    color: rgb(162, 71, 71);
+}
+
+.media,
+.imagen {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagen {
+    display: block;
+    border-radius: 7px;
+}
+
+@media (max-width: 768px) {
+    .media,
+    .imagen {
+        width: 100%;
+    }
+}
+
+@media (min-width: 767px) {
+    .media,
+    .imagen {
+        width: 70%;
+    }
+}
+
+@media (min-width: 801px){
+    .mycolor {
+        background-color: #212529;
+        border: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .fondo-texto {
+        position: relative;
+        z-index: 20;
+    }
+
+    .carta {
+      flex-direction: column;
+    }
+
+    .carta__info {
+        margin-left: 0;
+    }
+
+    .carta__thumbnail {
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .carta__image {
+        width: 450px;
+    }
+}
+
+@media (max-width: 767px) {
+    .tamanio {
+        margin-left: 1vw;
+        font-weight:400;
+        font-size: 1.1rem;
+    }
+}

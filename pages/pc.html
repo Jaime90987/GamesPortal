@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GamesPortal - PC</title>
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style_pc.css" type="text/css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/2b3617159f.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- ------------------------------head--------------------------------------- -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="/assets/img/logo.png" alt="Logo" width="170" height="44">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item pr-3">
+              <a class="nav-link light mypadding" aria-current="page" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle light active mypadding" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Noticias</a>
+              <ul class="dropdown-menu dropdown-menu-dark mycolor">
+                <li><a class="dropdown-item active" href="/pages/pc.html">PC</a></li>
+                <li><a class="dropdown-item" href="/pages/xbox.html">Xbox</a></li>
+                <li><a class="dropdown-item" href="/pages/ps.html">Play Station</a></li>
+                <li><a class="dropdown-item" href="/pages/nintendo.html">Nintendo</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mypadding" href="/pages/contacto.html">Contáctanos</a>
+            </li>
+          </ul>
+          <a href="/pages/login.html" class="navbar-text btn btn-success m1">
+            Login
+          </a>
+          <a href="/pages/signup.html" class="navbar-text btn btn-light m2">
+            Sign Up
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ------------------------------main--------------------------------------- -->
+  <main>
+    <!-- ----------------------------------------------------------Noticias--------------------------------------------------- -->
+    <div class="container pt-3 pb-2 container-principal">
+      <div class="row mymargen">
+        <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+          <h2 class="titulo"><i class="fa-solid fa-computer icon"></i> Noticias <span class="marca">PC</span></h2>
+          <article class="carta">
+            <a href="/pages/news/pc/noticia2.html" class="carta__thumbnail">
+              <img src="/assets/img/noticia2/kena1366_2000.webp" alt="Imagen de SP" class="carta__image img-fluid">
+            </a>
+            <div class="carta__info blog-meta big-meta col-md-8">
+              <h3 class="carta__title">
+                <b><a href="/pages/news/pc/noticia2.html" class="carta__link-title">Kena: Bridge of Spirits celebrará su primer aniversario con su llegada a Steam y una gran actualización repleta de novedades.</a></b>
+              </h3>
+              <a href="/pages/pc.html" class="btn btn-sm mb-2 boton-pc">PC</a>
+              <p class="carta__texto">El 27 de septiembre Ember Lab nos dejará con dos novedades muy importantes relacionadas con Kena: Bridge of Spirits, comenzando por el lanzamiento de su versión de Steam.</p>
+              <p class="carta__text_small">
+                <small><i class="fa-solid fa-comments"></i> 9 - </small>
+                <small>Jaime Jaramillo Pérez - </small>
+                <small>20 Agosto, 2022</small>
+              </p>
+            </div>
+            <a href="/pages/news/pc/noticia2.html" class="boton boton--more">
+              <span class="boton__text">Leer más...</span>
+              <i class="boton__icon fas fa-arrow-right"></i>
+            </a>
+          </article>
+          <hr>
+          <article class="carta">
+            <a href="/pages/news/pc/noticia1.html" class="carta__thumbnail">
+              <img src="/assets/img/noticia1/sp-e1654266613367.jpg" alt="Imagen de SP" class="carta__image img-fluid">
+            </a>
+            <div class="carta__info blog-meta big-meta col-md-8">
+              <h3 class="carta__title">
+                <b><a href="/pages/news/pc/noticia1.html" class="carta__link-title">Marvel’s Spiderman Remastered y Cult of the Lamb, los dos nuevos juegos de Steam que son furor.</a></b>
+              </h3>
+              <a href="/pages/pc.html" class="btn btn-sm mb-2 boton-pc">PC</a>
+              <p class="carta__texto">Últimamente Steam atraviesa una época de grandes lanzamientos, no solo por Stray, sino también por juegos como Marvel’s Spiderman Remastered o Cult of the Lamb.</p>
+              <p class="carta__text_small">
+                <small><i class="fa-solid fa-comments"></i> 9 - </small>
+                <small>Jaime Jaramillo Pérez - </small>
+                <small>15 Agosto, 2022</small>
+              </p>
+            </div>
+            <a href="/pages/news/pc/noticia1.html" class="boton boton--more">
+              <span class="boton__text">Leer más...</span>
+              <i class="boton__icon fas fa-arrow-right"></i>
+            </a>
+          </article>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+          <!-- <h3>Reviews</h3>  -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ------------------------------footer--------------------------------------- -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+      <section>
+          <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+              <a href="/pages/contacto.html" class="btn btn-outline-light mb-4">Contáctanos</a>
+            </div>
+          </div>
+      </section>
+      <section class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      GamesPortal© 2022 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+</html>
