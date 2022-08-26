@@ -237,6 +237,27 @@ html {
     border-radius: 7px;
 }
 
+#botonUp {
+    display: none;
+    position: fixed;
+    bottom: 2vh;
+    right: 1.5vw;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    background-color: #4d5052; 
+    color: white; 
+    cursor: pointer; 
+    border-radius: 50%; 
+    font-size: 20px; 
+    border: 4px solid transparent;
+}
+
+#botonUp:hover {
+    transform: scale(1.1);
+    border-color: rgba(33, 134, 141, 0.1);
+}
+
 @media (max-width: 768px) {
     .media,
     .imagen {
@@ -261,6 +282,14 @@ html {
 }
 
 @media (max-width: 800px) {
+    #botonUp {
+        bottom: 1.2rem;
+        right: 1.2rem;
+        width: 3.7em;
+        height: 3.7em;
+        font-size: 16px; 
+    }
+    
     .card {
         margin-right: auto;
         margin-left: auto;
