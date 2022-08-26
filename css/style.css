@@ -103,6 +103,7 @@ html {
 .carousel,
 .carrusel-item {
     height: 10rem;
+    box-shadow: 0px 14px 41px 0px rgba(0,0,0,0.82);
 }
 
 .cartas {
