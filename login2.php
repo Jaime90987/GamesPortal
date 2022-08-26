@@ -1,12 +1,3 @@
-<?php
-  session_start();
-  if(isset($_POST['btnsend'])){
-    $nombre = $_POST['USER'];
-    $password = $_POST['PASSWORD'];
-    $noticias = $_POST['NEWS'];
-  }
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -94,12 +85,6 @@
                   <option value="4">Nintendo</option>
                 </select>
 
-                <?php
-                  echo $nombre . "<br>";
-                  echo $password . "<br>";
-                  echo $noticias . "<br><br>";
-                ?>
-
                 <div class="d-grid gap-2 centrar"> 
                   <input type="submit" value="Login" class="btn btn-primary mb-3 boton2">
                   <p class="text-center mb-1">¿Aún no tienes una cuenta?</p>
@@ -143,9 +128,7 @@
       </section>
       <section class="mb-4">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-          eum harum corrupti dicta, aliquam sequi voluptate quas.
+          GamesPortal es un sitio web donde encontrarás las noticias más relevantes y recientes del mundo del gaming, sin importar si te gusta cierta consola, compañia o estudio de videojuegos, seguro habrá al menos una noticia que querrás leer.
         </p>
       </section>
     </div>
