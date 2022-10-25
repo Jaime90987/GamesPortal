@@ -3,7 +3,7 @@
   require '../php/config.php';
   require '../php/conexion.php';
   require_once '../vendor/autoload.php';
-  MercadoPago\SDK::setAccessToken('TEST-4362180245266717-092011-62c897f4b46bc3df37b18f6277328cbd-1199484650');
+  MercadoPago\SDK::setAccessToken('');
 
   $id = isset($_GET['id']) ? $_GET['id'] : '';
   $token = isset($_GET['token']) ? $_GET['token'] : '';
