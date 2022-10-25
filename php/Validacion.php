@@ -1,5 +1,5 @@
 <?php
-    require_once "/php/Conexion.php";
+    require_once ("/php/Conexion.php");
 
     $user = $_POST['USER'];
     $password = $_POST['PASSWORD'];
@@ -18,13 +18,13 @@
         $_SESSION["USER"] = $user;
 
         if($user == "Jaime"){ //si el name es igual a Jaime (Admin) se abre la pagina
-            header("Location:../usuario.html");
+            header("Location:usuario.html");
         }else{
-            header("Location:../pages/login1.php");
+            header("Location:pages/login1.php");
         }
 
     }else{
-        echo "<script>alert("El usuario, contraseña y/o noticia son incorrectos.");window.history.go(-1);</script>";
+        echo "<script>alert('El usuario, contraseña y/o noticia son incorrectos.');window.history.go(-1);</script>";
     }
     
 ?>

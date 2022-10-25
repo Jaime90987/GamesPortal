@@ -31,6 +31,10 @@ textarea {
     resize: none;
 }
 
+.rojo {
+    color: red;
+}
+
 .m1,
 .m2 {
     width: 5.5em;
@@ -47,6 +51,16 @@ textarea {
     background-color: #ddd;
     border-color: #ddd;
     color: inherit;
+}
+
+.perfil-1 {
+    font-size: 1rem;
+}
+
+.perfil-2 {
+    text-align: right;
+    width: auto;
+    padding: .5em 1em;
 }
 
 .container-principal {

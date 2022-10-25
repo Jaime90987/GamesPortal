@@ -50,6 +50,12 @@ html {
     color: inherit;
 }
 
+.perfil {
+    width: 170px;
+    margin-right: 0px;
+    text-align: right;
+}
+
 .container-principal {
     background-color: #ebebf5;
     width: 100%;

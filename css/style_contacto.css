@@ -33,8 +33,11 @@ textarea {
 
 .m1,
 .m2 {
-    width: 5.5em;
     font-weight: 600;
+}
+
+.m3 {
+    width: 5.5em;
 }
 
 .m1 {
@@ -47,6 +50,16 @@ textarea {
     background-color: #ddd;
     border-color: #ddd;
     color: inherit;
+}
+
+.perfil-1 {
+    font-size: 1rem;
+}
+
+.perfil-2 {
+    text-align: right;
+    width: auto;
+    padding: .5em 1em;
 }
 
 .container-principal {
@@ -305,6 +318,7 @@ form {
     transform: scale(1.1);
     border-color: rgba(33, 134, 141, 0.1);
 }
+
 
 @media (min-width: 801px){
     .mycolor {
