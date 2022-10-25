@@ -1,10 +1,5 @@
 <?php
 
-    // $server = 'sql311.epizy.com';
-    // $user = 'epiz_32424567';
-    // $pass = 'zChNlbkdFMM';
-    // $database = 'epiz_32424567_myweb';
-
     $server = 'localhost';
     $user = 'root';
     $pass = '';
